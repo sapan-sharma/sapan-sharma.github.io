@@ -3,50 +3,62 @@
 <title>web browser: an introduction</title>
 
 <head>
-<p>
-<br/>
-a web browser was a landmark software that heralded a new era in the history of analytical machines that we call computers.
-here we learn what exactly is a web browser, how does it enable one to solve varyingly complex problems (which is what computer programs do), why is it such a popular platform for all software development today and what is it made up of(architectures and implementations)
-</p>
+
+<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
 
-
-<table>
-<tr>
-<td>sno.</td>
-<td>doubt name</td>
-<td>info.</td>
-</tr>
-
-<tr>
-<td>1</td>
-<td>what is a mime type</td>
-
-</tr>
-
-
-<tr>
-<td>2</td>
-<td>css intro</td>
-<td><href>http://html.net/tutorials/css/lesson1.php</href></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td>what is a mime type</td>
-
-</tr>
+<div class="nav">
+      <div class="container">
+<!--        <ul class="pull-left">
+          <li><a href="#">Name</a></li>
+          <li><a href="#">Browse</a></li>
+        </ul>
+-->
+        <ul class="pull-right">
+          <li><a href="https://in.linkedin.com/in/sapan-sharma-232160118" target="_blank">About me</a></li>
+        </ul>
+      </div>
+    </div>
 
 
-<tr>
-<td>4</td>
-<td>what is a mime type</td>
+<div class="jumbotron">
+      <div class="container">
+        <h1>Web browser: an introduction</h1>
+        <p>a web browser was a landmark software that heralded a new era in the history of analytical machines that we call computers.
+here we learn what exactly is a web browser, how does it enable one to solve varyingly complex problems (which is what computer programs do), why is it such a popular platform for all software development today and what is it made up of(architectures and implementations).</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div> 
 
-</tr>
-</table>
+<div class="learn-more">
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+			<h3>css intro</h3>
+			<p><a href="http://html.net/tutorials/css/lesson1.php" target="_blank">simple tutorial at html.net</a></p>
+	      </div>
+
+<div class="col-md-4">
+			<h3>mime type</h3>
+			<p><a href="https://en.wikipedia.org/wiki/Media_type" target="_blank">what is a mime type</a></p>
+	      </div>
+
+<div class="col-md-4">
+			<h3>scripting intro</h3>
+			<p><a href="#">scripting intro</a></p>
+	      </div>
+
+</div>
+
+</div>
+</div>
+
 
 </body>
 <html>
