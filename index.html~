@@ -1,0 +1,52 @@
+<html>
+
+<title>web browser: an introduction</title>
+
+<head>
+<p>
+<br/>
+a web browser was a landmark software that heralded a new era in the history of analytical machines that we call computers.
+here we learn what exactly is a web browser, how does it enable one to solve varyingly complex problems (which is what computer programs do), why is it such a popular platform for all software development today and what is it made up of(architectures and implementations)
+</p>
+
+</head>
+
+<body>
+
+
+<table>
+<tr>
+<td>sno.</td>
+<td>doubt name</td>
+<td>info.</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>what is a mime type</td>
+
+</tr>
+
+
+<tr>
+<td>2</td>
+<td>css intro</td>
+<td><href>http://html.net/tutorials/css/lesson1.php</href></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>what is a mime type</td>
+
+</tr>
+
+
+<tr>
+<td>4</td>
+<td>what is a mime type</td>
+
+</tr>
+</table>
+
+</body>
+<html>
