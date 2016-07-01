@@ -4,11 +4,29 @@
   font-weight: bold;
   padding: 14px 10px;
   text-transform: uppercase;
+}*/
+
+.floating-menu {
+padding: 5px;;
+/*z-index: 100;
+font-family: sans-serif;
+background: yellowgreen;
+width: 130px;
+*/
+position: fixed;
+}
+
+.floating-menu a, 
+.floating-menu h3 {
+font-size: 1.2em;
+/*display: block;*/
+margin: 0 0.5em;
+color: white;
 }
 
 .nav li {
   display: inline;
-}*/
+}
 
 .jumbotron {
   background-image:url('http://goo.gl/04j7Nn');
@@ -33,16 +51,6 @@
   font-size: 20px;
   color: #fff;
 }
-
-.learn-more {
-  background-color: #f7f7f7;
-}
-
-.learn-more h3 {
-  font-family: 'Shift', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-}
 	
 .learn-more a {
   color: #00b0ff;
@@ -65,4 +73,26 @@
     font-size:15px;
     margin-bottom:13px;
     }
-    
+
+.learn-more
+{
+    background-color: #e6e6ff;
+    padding: 5pt;
+}
+
+.learn-more h2
+{
+    color: #393c3d;
+    font-size:24px;
+    }
+
+.learn-more p
+{    
+    font-size:15px;
+    margin-bottom:13px;
+    }
+
+.learn-more h3
+{
+    color: #393c3d;
+}
