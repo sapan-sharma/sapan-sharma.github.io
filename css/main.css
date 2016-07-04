@@ -19,7 +19,7 @@ position: fixed;
 
 .floating-menu a, 
 .floating-menu h3 {
-font-size: 1.2em;
+font-size: 1em;
 /*display: block;*/
 margin: 0 0.5em;
 color: white;

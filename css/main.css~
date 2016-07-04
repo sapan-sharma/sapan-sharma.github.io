@@ -8,9 +8,10 @@
 
 .floating-menu {
 padding: 5px;;
+background: yellowgreen;
 /*z-index: 100;
 font-family: sans-serif;
-background: yellowgreen;
+
 width: 130px;
 */
 position: fixed;
