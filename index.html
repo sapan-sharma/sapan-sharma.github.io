@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href='styles/main.css'>
 
@@ -31,22 +31,36 @@
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"><em>I love programming</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>I have been programming for 8 years. I have created websites, desktop applications, datawarehouses for the companies ive worked for. 
+  My areas of interest in application programming are intelligent agents/ software which can, or act as platforms for problem solving without 
+  having to 'hard code' the algorithm for the solution of the problem in them. A couple of notable mentions among the software projects I've 
+  been a part of that were close to the idea mentioned above are 'Application risk scoring System for Vehicle Insurance' and 'Atrium- a 
+  Microsoft .net shell based Communication framework'</p>
+  
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
       <p><b>Sapan Sharma</b></p><br>
-      <img src="https://unsplash.it/235/235?image=91" class="w3-circle" alt="Photo of Me">
+      <img src="styles/images/my-photo-crop.jpeg" class="w3-circle" style='width:235px;height:235px'alt="Photo of Me"><br>
+	  <p><p>
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-section">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>I have wrote code for desktop & web (with minor exposure in mobile) platforms, with proficiency in Microsoft .net framework;
+	  database platforms mainly MS-SQL server 2010 & Oracle-11g; client side scripting languages and packages namely Javascript,
+	  Jquery, AngularJs and BootstrapJs; and business intelligence & reporting tools namely Microsoft SQL Server Integration Service & 
+	  Microsoft SQL Server Reporting Service. I have working knowledge of employing data mining techniques for database design to ensure 
+	  scalability, quick information retrieval from live and historical data and maintainability.</p>
     </div>
   </div>
+  
+  <div class="w3-row w3-padding-8">	
+	<div class='w3-col m6 w3-center'><a href='https://www.linkedin.com/in/sapan-sharma-232160118' target='_blank'><img src="styles/images/linkedin-icon.png" class="w3-circle"></a></div>
+	<div class='w3-col m6 w3-center'><a href='https://github.com/sapan-sharma' target='_blank'><img src="styles/images/github-icon.png" class="w3-circle"></a></div>
+	</div>
+	
+  </div>
+  
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -63,39 +77,43 @@
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="styles/images/img_p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <div class="w3-col m4">
+      <img src="styles/images/img_p1.jpg" style="width:100%" onclick="onClick(this,'descWLust','detWLust')" class="w3-hover-opacity">
+	  <p id='descWLust' style='display:none;'>Template of a travel booking and CRM website i created</p>
+	  <p id='detWLust' style='display:none;'><a target='_blank' href='http://sapan-sharma.github.io/index_wanderlust.html'>Wanderlust</a></p>
     </div>
 
-    <div class="w3-col m3">
-      <img src="styles/images/img_p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <div class="w3-col m4">
+      <img src="styles/images/img_p2.jpg" style="width:100%" onclick="onClick(this,'descCouML','detCouML')" class="w3-hover-opacity">
+	  <p id='descCouML' style='display:none;'>Certified in 'Machine Learning and statistical modeling' from Stanford University, USA</p>
+	  <p id='detCouML' style='display:none;'><a target='_blank' href='https://www.coursera.org/account/accomplishments/certificate/LT9Y5VPYUZKF'>Course Cerfiticate</a></p>
     </div>
 
-    <div class="w3-col m3">
-      <img src="styles/images/img_p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <div class="w3-col m4">
+      <img src="styles/images/img_p3.jpg" style="width:100%" onclick="onClick(this,'descCouHad','detCouHad')" class="w3-hover-opacity">
+	  <p id='descCouHad' style='display:none;'>Certified in 'Hadoop Platform and Application Framework development' from UC San Diego, USA</p>
+	  <p id='detCouHad' style='display:none;'><a target='_blank' href='https://www.coursera.org/account/accomplishments/certificate/URSAJ853T6UP'>Course Cerfiticate</a></p>
     </div>
 
-    <div class="w3-col m3">
-      <img src="styles/images/img_p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
   </div>
+  
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <img src="styles/images/git-repo.png" style="width:100%" onclick="onClick(this,'descGrep1','detGrep1')" class="w3-hover-opacity">
+	  <p id='descGrep1' style='display:none;'>Neural network trained by the backpropogation algorithm to apply in Hand-written digit recognition.</p>
+	  <p id='detGrep1' style='display:none;'><a target='_blank' href='https://github.com/sapan-sharma/backPropNN'>git repo</a></p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="styles/images/git-repo.png" style="width:100%" onclick="onClick(this,'descGrep2','detGrep2')" class="w3-hover-opacity">
+	  <p id='descGrep2' style='display:none;'>This is an Email Spam classifier using a SVM employing Gaussian Kernel.</p>
+	  <p id='detGrep2' style='display:none;'><a target='_blank' href='https://github.com/sapan-sharma/spamClassifierSVM'>git repo</a></p>
+    </div>
+
+  </div>
+  
 
   <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="styles/images/img_p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="styles/images/img_p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="styles/images/img_p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="styles/images/img_p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
   </div>
 </div>
 
@@ -106,13 +124,13 @@
 	<table>	
 	<tr>
 	<td rowspan='2'>
-	<img id="img01" style="max-width:100%">	
+	<img id="img01">	
 	</td>
-	<th>Template of a travel website i designed</th>
+	<th><p id='desc'></p></th>
 	</tr>
 	<tr>	
-	<td><a href='https://sapan-sharma.github.io' target='_blank'>Wanderlust</a></td>
-	</tr>
+	<td><p id='detail'></p></td>
+	</tr>	
 	</table>
     
   </div>
@@ -187,9 +205,13 @@ marker.setMap(map);
 google.maps.event.addDomListener(window, 'load', initialize);
 
 // Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
+function onClick(image, para, detail) {
+  document.getElementById('img01').src = image.src;
+  document.getElementById('desc').innerHTML = document.getElementById(para).innerHTML;
+  //console.log(document.getElementById(detail).innerHTML);
+  document.getElementById('detail').innerHTML = "" + document.getElementById(detail).innerHTML + "";
+  
+  document.getElementById('modal01').style.display = "block";
 }
 
 // Change style of navbar on scroll
