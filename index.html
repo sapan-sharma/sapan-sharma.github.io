@@ -3,9 +3,9 @@
 <title>Sapan Sharma</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/w3.css">
+<link rel="stylesheet" href="styles/font-lato.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href='styles/main.css'>
 
 <body>
@@ -40,7 +40,7 @@
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
       <p><b>Sapan Sharma</b></p><br>
-      <img src="https://unsplash.it/235/235?image=91" class="w3-circle" alt="Photo of Me"><br>
+      <img src="styles/images/my-photo-crop.jpeg" class="w3-circle" style='width:235px;height:235px'alt="Photo of Me"><br>
 	  <p><p>
     </div>
 
@@ -55,8 +55,8 @@
   </div>
   
   <div class="w3-row w3-padding-8">	
-	<div class='w3-col m6 w3-center'><a href='https://www.linkedin.com/in/sapan-sharma-232160118' target='_blank'><img src="styles\images\linkedin-icon.png" class="w3-circle"></a></div>
-	<div class='w3-col m6 w3-center'><a href='https://github.com/sapan-sharma' target='_blank'><img src="styles\images\github-icon.png" class="w3-circle"></a></div>
+	<div class='w3-col m6 w3-center'><a href='https://www.linkedin.com/in/sapan-sharma-232160118' target='_blank'><img src="styles/images/linkedin-icon.png" class="w3-circle"></a></div>
+	<div class='w3-col m6 w3-center'><a href='https://github.com/sapan-sharma' target='_blank'><img src="styles/images/github-icon.png" class="w3-circle"></a></div>
 	</div>
 	
   </div>
@@ -187,7 +187,6 @@
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBBjpwyRVpobYo4rFqqpjY7haSJsQm-2go"></script>
 <script>
 var myCenter = new google.maps.LatLng(19.141887, 72.875012);
-
 function initialize() {
 var mapProp = {
   center:myCenter,
@@ -196,18 +195,13 @@ var mapProp = {
   draggable:false,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
 var marker = new google.maps.Marker({
   position:myCenter,
   });
-
 marker.setMap(map);
 }
-
 google.maps.event.addDomListener(window, 'load', initialize);
-
 // Modal Image Gallery
 function onClick(image, para, detail) {
   document.getElementById('img01').src = image.src;
@@ -221,7 +215,6 @@ function onClick(image, para, detail) {
 function onSendClick() {
   document.getElementById('modalThanks').style.display = "block";
 }
-
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
@@ -237,4 +230,3 @@ function myFunction() {
 
 </body>
 </html>
-
