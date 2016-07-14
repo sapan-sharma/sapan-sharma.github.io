@@ -3,9 +3,9 @@
 <title>Sapan Sharma</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="styles/w3.css">
-<link rel="stylesheet" href="styles/font-lato.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href='styles/main.css'>
 
 <body>
@@ -40,7 +40,7 @@
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
       <p><b>Sapan Sharma</b></p><br>
-      <img src="styles/images/my-photo-crop.jpeg" class="w3-circle" style='width:235px;height:235px'alt="Photo of Me"><br>
+      <img src="https://unsplash.it/235/235?image=91" class="w3-circle" alt="Photo of Me"><br>
 	  <p><p>
     </div>
 
@@ -55,8 +55,8 @@
   </div>
   
   <div class="w3-row w3-padding-8">	
-	<div class='w3-col m6 w3-center'><a href='https://www.linkedin.com/in/sapan-sharma-232160118' target='_blank'><img src="styles/images/linkedin-icon.png" class="w3-circle"></a></div>
-	<div class='w3-col m6 w3-center'><a href='https://github.com/sapan-sharma' target='_blank'><img src="styles/images/github-icon.png" class="w3-circle"></a></div>
+	<div class='w3-col m6 w3-center'><a href='https://www.linkedin.com/in/sapan-sharma-232160118' target='_blank'><img src="styles\images\linkedin-icon.png" class="w3-circle"></a></div>
+	<div class='w3-col m6 w3-center'><a href='https://github.com/sapan-sharma' target='_blank'><img src="styles\images\github-icon.png" class="w3-circle"></a></div>
 	</div>
 	
   </div>
@@ -136,6 +136,10 @@
   </div>
 </div>
 
+<div id="modalThanks" class="w3-modal"  onclick="this.style.display='none'">
+<p class='w3-display-middle w3-text-black'>Thanks for dropping by. Let me get back to you.</p>
+</div>
+
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container">
   <div class="w3-display-middle">
@@ -169,18 +173,18 @@
         </div>
       </div>
       <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-      <button class="w3-btn w3-section w3-right">SEND</button>
+      <button class="w3-btn w3-section w3-right" onClick='onSendClick()'>SEND</button>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
-  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+  <!--<p>Powered by HTML5 and CSS3</a></p>-->
 </footer>
  
 <!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBBjpwyRVpobYo4rFqqpjY7haSJsQm-2go"></script>
 <script>
 var myCenter = new google.maps.LatLng(19.141887, 72.875012);
 
@@ -213,6 +217,11 @@ function onClick(image, para, detail) {
   
   document.getElementById('modal01').style.display = "block";
 }
+
+function onSendClick() {
+  document.getElementById('modalThanks').style.display = "block";
+}
+
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
