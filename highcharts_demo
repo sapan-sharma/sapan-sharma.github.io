@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="http://code.highcharts.com/adapters/standalone-framework.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -14,7 +15,7 @@
 <script>
 function loadChart() {
     
-	var chart = new Highcharts.Chart({
+	var options = {
     
 	chart: {
 			renderTo: 'container',
@@ -29,6 +30,7 @@ function loadChart() {
         },
 
     xAxis: {
+			sentStrength: [],
             title: {
                 enabled: true,
                 text: 'Sentiment'
@@ -38,6 +40,7 @@ function loadChart() {
             showLastLabel: true
         },
     yAxis: {
+			day: [],
             title: {
                 text: 'Time (days) starting 5 july 16'
             }
@@ -78,18 +81,39 @@ function loadChart() {
             }
         },
 
-    series: [{
-            name: 'Positive',
-            color: 'rgba(223, 83, 83, .5)',
-            data: [[2, 0], [3,0], [4,0], [5,0]]
-	},
-	
-	{
-            name: 'Negative',
-            color: 'rgba(119, 152, 191, .5)',
-            data: [[-2, 0], [-3,0], [-2,0], [-2,0], [-2,0], [-2,0], [-5,0]]
-	}]
+    series: []
 
+};
+	
+	console.log('here');
+	
+$.get("twitter_out.csv", function(data) {
+	console.log('here');
+    // Split the lines
+    var lines = data.split('\n');
+    
+    // Iterate over the lines and add categories or series
+    $.each(lines, function(lineNo, line) {
+        var items = line.split(',');
+        
+        // header line containes categories
+        if (lineNo > 0) {
+            $.each(items, function(itemNo, item) {
+				if (itemNo == 0) {
+                	options.xAxis.sentStrength.push(item);
+                } else {
+                    options.yAxis.day.push(item);
+                }
+                				
+            });
+        }
+	
+      	
+        
+    });
+    
+    // Create the chart
+    var chart = new Highcharts.Chart(options);
 });
 
 	
