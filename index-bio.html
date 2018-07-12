@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>Sapan Sharma</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="styles/w3.css">
+<link rel="stylesheet" href="styles/font-lato.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href='styles/main.css'>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#" class="w3-padding-large">HOME</a></li>
+    <li class="w3-hide-small w3-right">
+      <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
+    </li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">HELLO<span class="w3-hide-small"> WORLD</span>!</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I am passionate about many things in life, programming and science are two of them.</em></p>
+  <p>I have been programming for 8+ years. I have created websites, desktop applications & datawarehouses for the companies
+  i've been worked for. My areas of interest in application programming are intelligent agents/software.
+  My area of interest for the past 3 years has been Computational methods specifically Machine learning. I have done some work in nlp specifically named entity recognition and coupled with supervised learning. At work, i have recently started working on applying machine learning to solve problems in metaboloomics. I am currently working as Data scientist at <a href='http://www.elucidata.io' target='_blank' style='color:#1aa3ff;text-decoration:none'>Elucidata</a>. I love <span style="color:#ff3300;">linux</span> from the bottom of my heart. Currently, my language of choice is <span style="color:#ff3300;">python</span>, code editor of choice is <span style="color:#ff3300;">visual studio code</span>.</p>
+  
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-section">
+      <p><b>Sapan Sharma</b></p><br>
+      <img src="styles/images/my-photo-crop.jpeg" class="w3-circle" style='width:235px;height:235px'alt="Photo of Me"><br>
+	  <p><p>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-section">
+      <p>I have wrote code for desktop, web & mobile platforms,
+      with proficiency in python, R, c#, java, c and matlab/octave ;databases namely
+      ms-sql  server, mysql, oracle-11g; javascript and js based packages/libraries namely jquery, angularJs 
+      and bootstrapJs; and business intelligence & reporting tools namely ms SSIS, SSRS and tableu. 
+      I love working on linux machines (and secretly despise windows, as a result of years of suffering).
+      I have working knowledge of employing data mining techniques for database design to ensure scalability,
+      quick information retrieval from live and historical data and maintainability.</p>
+    </div>
+  </div>
+  
+  <div class="w3-row w3-padding-8">	
+	<div class='w3-col m6 w3-center'><a href='https://www.linkedin.com/in/sapan-sharma-232160118' target='_blank'><img src="styles/images/linkedin-icon.png" class="w3-circle"></a></div>
+	<div class='w3-col m6 w3-center'><a href='https://github.com/sapan-sharma' target='_blank'><img src="styles/images/github-icon.png" class="w3-circle"></a></div>
+	</div>
+	
+  </div>
+  
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest work.<br> Click on the images to find more about them</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <img src="styles/images/img_p1.jpg" style="width:100%" onclick="onClick(this,'descWLust','detWLust')" class="w3-hover-opacity">
+	  <p id='descWLust' style='display:none;'>Template of a travel booking and CRM website i created</p>
+	  <p id='detWLust' style='display:none;'><a target='_blank' href='http://sapan-sharma.github.io/index_wanderlust.html'>Wanderlust</a></p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="styles/images/img_p2.jpg" style="width:100%" onclick="onClick(this,'descCouML','detCouML')" class="w3-hover-opacity">
+	  <p id='descCouML' style='display:none;'>Certified in 'Machine Learning and statistical modeling' from Stanford University, USA</p>
+	  <p id='detCouML' style='display:none;'><a target='_blank' href='https://www.coursera.org/account/accomplishments/certificate/LT9Y5VPYUZKF'>Course Cerfiticate</a></p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="styles/images/img_p3.jpg" style="width:100%" onclick="onClick(this,'descCouHad','detCouHad')" class="w3-hover-opacity">
+	  <p id='descCouHad' style='display:none;'>Certified in 'Hadoop Platform and Application Framework development' from UC San Diego, USA</p>
+	  <p id='detCouHad' style='display:none;'><a target='_blank' href='https://www.coursera.org/account/accomplishments/certificate/URSAJ853T6UP'>Course Cerfiticate</a></p>
+    </div>
+
+  </div>
+  
+  <div class="w3-row-padding w3-center">
+
+    <div class="w3-col m4">
+      <img src="styles/images/git-icon-gray.png" style="width:100%" onclick="onClick(this,'descGrep2','detGrep2')" class="w3-hover-opacity">
+	  <p id='descGrep2' style='display:none;'>This is a twitter sentiment classifier employing named entity recognition and an ensemble classifier.</p>
+	  <p id='detGrep2' style='display:none;'><a target='_blank' href='https://github.com/sapan-sharma/SentimentClassifier'>git repo</a></p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="styles/images/git-icon-blue.png" style="width:100%" onclick="onClick(this,'descGrep1','detGrep1')" class="w3-hover-opacity">
+	  <p id='descGrep1' style='display:none;'>Neural network trained by the backpropogation algorithm to apply in Hand-written digit recognition.</p>
+	  <p id='detGrep1' style='display:none;'><a target='_blank' href='https://github.com/sapan-sharma/backPropNN'>git repo</a></p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="styles/images/git-repo.png" style="width:100%" onclick="onClick(this,'descGrep2','detGrep2')" class="w3-hover-opacity">
+	  <p id='descGrep2' style='display:none;'>This is an Email Spam classifier using a SVM employing Gaussian Kernel.</p>
+	  <p id='detGrep2' style='display:none;'><a target='_blank' href='https://github.com/sapan-sharma/SentimentClassifier'>git repo</a></p>
+    </div>
+
+  </div>
+  
+
+  <div class="w3-row-padding w3-center w3-section">
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+	<table>	
+	<tr>
+	<td rowspan='2'>
+	<img id="img01">	
+	</td>
+	<th><p id='desc'></p></th>
+	</tr>
+	<tr>	
+	<td><p id='detail'></p></td>
+	</tr>	
+	</table>
+    
+  </div>
+</div>
+
+<div id="modalThanks" class="w3-modal"  onclick="this.style.display='none'">
+<p class='w3-display-middle w3-text-black'>Thanks for dropping by. Let me get back to you.</p>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Mumbai, India<br>
+        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +91 986-790-6942<br>
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: sapan.sharma9@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of coffee, or leave me a note:</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <button class="w3-btn w3-section w3-right" onClick='onSendClick()'>SEND</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
+  <!--<p>Powered by HTML5 and CSS3</a></p>-->
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBjpwyRVpobYo4rFqqpjY7haSJsQm-2go"></script>
+<script>
+var myCenter = new google.maps.LatLng(19.141887, 72.875012);
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+// Modal Image Gallery
+function onClick(image, para, detail) {
+  document.getElementById('img01').src = image.src;
+  document.getElementById('desc').innerHTML = document.getElementById(para).innerHTML;
+  //console.log(document.getElementById(detail).innerHTML);
+  document.getElementById('detail').innerHTML = "" + document.getElementById(detail).innerHTML + "";
+  
+  document.getElementById('modal01').style.display = "block";
+}
+
+function onSendClick() {
+  document.getElementById('modalThanks').style.display = "block";
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+
+</body>
+</html>
